@@ -46,11 +46,11 @@ SCRIPT;
     }
 
     /**
-     * 重写父类方法，为解决js中计算input size的问题
+     * Переопределение метода родительского класса
      *
      * @return string
      */
-    public function getPlaceholder()
+    public function getPlaceholder():string
     {
         $placeholder = parent::getPlaceholder();
         $len = mb_strlen($placeholder);
